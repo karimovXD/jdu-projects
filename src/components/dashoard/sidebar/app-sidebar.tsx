@@ -1,7 +1,6 @@
 "use client";
 import { useState, useMemo } from "react";
 import { SearchForm } from "@/components/dashoard/sidebar/search-form";
-import { VersionSwitcher } from "@/components/dashoard/sidebar/version-switcher";
 import { data } from "./sidebar.data";
 import {
   Sidebar,
@@ -16,9 +15,11 @@ import {
   SidebarRail,
 } from "@/components/ui/sidebar";
 import { ThemeButton } from "@/components/dashboard-ui/buttons/theme-button/ThemeButton";
+import { usePathname } from "next/navigation";
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   const [query, setQuery] = useState("");
+  const pathname = usePathname();
 
   const filtered = useMemo(() => {
     if (!query) return data;
@@ -52,7 +53,10 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
                 <SidebarMenu>
                   {section.items.map((item) => (
                     <SidebarMenuItem key={item.title}>
-                      <SidebarMenuButton asChild isActive={item.isActive}>
+                      <SidebarMenuButton
+                        asChild
+                        isActive={pathname === item.url}
+                      >
                         <a href={item.url}>{item.title}</a>
                       </SidebarMenuButton>
                     </SidebarMenuItem>

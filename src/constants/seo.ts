@@ -1,7 +1,7 @@
 // shared/constants/seo.constants.ts
 import type { Metadata } from "next";
 
-export const SITE_NAME = "ResumeLens AI";
+export const SITE_NAME = "Projects JDU";
 export const SITE_URL = "https://resumelens.one.vercel.app";
 export const SITE_DESCRIPTION = "AI-powered resume analyzer that evaluates your CV, highlights weaknesses, optimizes keywords for ATS systems, and helps you land interviews faster.";
 

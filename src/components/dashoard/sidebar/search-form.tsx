@@ -53,7 +53,7 @@ export function SearchForm({
   }, []);
 
   return (
-    <form onSubmit={(e) => e.preventDefault()} {...props}>
+    <form onSubmit={(e) => e.preventDefault()} {...props} className="flex-1">
       <SidebarGroup className="flex-1">
         <SidebarGroupContent className="relative">
           <Label htmlFor="search" className="sr-only">

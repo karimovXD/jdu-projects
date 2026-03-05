@@ -4,7 +4,7 @@ import { DynamicBreadcrumb } from "@/components/dashboard-ui/breadcrumbs/breadcr
 export default function Header() {
   return (
     <header className="flex items-center gap-4 p-2 border-b">
-      <div className="border-r h-full p-2">
+      <div className="border-r h-full px-2">
         <SidebarTrigger className="-ml-2" />
       </div>
       <DynamicBreadcrumb />
