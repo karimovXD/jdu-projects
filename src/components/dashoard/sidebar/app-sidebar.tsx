@@ -16,6 +16,7 @@ import {
 } from "@/components/ui/sidebar";
 import { ThemeButton } from "@/components/dashboard-ui/buttons/theme-button/ThemeButton";
 import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   const [query, setQuery] = useState("");
@@ -57,7 +58,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
                         asChild
                         isActive={pathname === item.url}
                       >
-                        <a href={item.url}>{item.title}</a>
+                        <Link href={item.url}>{item.title}</Link>
                       </SidebarMenuButton>
                     </SidebarMenuItem>
                   ))}

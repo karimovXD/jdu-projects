@@ -1,7 +1,6 @@
 import Header from "@/components/dashoard/header/header";
 import { AppSidebar } from "@/components/dashoard/sidebar/app-sidebar";
 import { SidebarProvider } from "@/components/ui/sidebar";
-import { cn } from "@/lib/utils";
 import styles from "@/styles/dashboard.module.scss";
 
 export default function RoutesLayout({

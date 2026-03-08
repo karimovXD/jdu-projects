@@ -30,11 +30,11 @@ export const data: NavSection[] = [
         items: [
             {
                 title: "html-tags",
-                url: ROUTES.HTML.TOPIC("project-1"),
+                url: ROUTES.HTML.TOPIC("task-1"),
             },
             {
                 title: "table",
-                url: ROUTES.HTML.TOPIC("project-2"),
+                url: ROUTES.HTML.TOPIC("task-2"),
             },
         ],
     },
