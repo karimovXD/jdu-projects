@@ -1,5 +1,5 @@
 import { Typography } from "@/components/dashboard-ui/typography";
-import styles from "../../styles/t1.module.scss";
+import styles from "./t1.module.scss";
 
 const movies = [
   {

@@ -1,5 +1,5 @@
 import { Typography } from "@/components/dashboard-ui/typography";
-import styles from "../../styles/t3.module.scss";
+import styles from "./t3.module.scss";
 
 export default function T3() {
   return (

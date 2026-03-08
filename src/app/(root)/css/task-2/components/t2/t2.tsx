@@ -1,12 +1,12 @@
 import { Typography } from "@/components/dashboard-ui/typography";
-import styles from "./t4.module.scss";
+import styles from "./t2.module.scss";
 
-export default function T4() {
+export default function T2() {
   return (
     <div className="flex flex-col gap-2">
-      <Typography variant="h2">Task 4</Typography>
+      <Typography variant="h2">Task 2</Typography>
       <div className={styles.grid}>
-        {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((n) => (
+        {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map((n) => (
           <div key={n} className={styles.item}>
             {n}
           </div>
