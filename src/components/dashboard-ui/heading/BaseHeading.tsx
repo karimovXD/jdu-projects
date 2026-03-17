@@ -16,17 +16,17 @@ const routes = [
   PageConstants.ROUTES.CSS.TOPIC("task-2"),
   PageConstants.ROUTES.CSS.TOPIC("task-3"),
 
-  PageConstants.ROUTES.CSS.TOPIC("task-1"),
-  PageConstants.ROUTES.CSS.TOPIC("task-2"),
-  PageConstants.ROUTES.CSS.TOPIC("task-3"),
-  PageConstants.ROUTES.CSS.TOPIC("task-4"),
-  PageConstants.ROUTES.CSS.TOPIC("task-5"),
-  PageConstants.ROUTES.CSS.TOPIC("task-6"),
-  PageConstants.ROUTES.CSS.TOPIC("task-7"),
-  PageConstants.ROUTES.CSS.TOPIC("task-8"),
-  PageConstants.ROUTES.CSS.TOPIC("task-9"),
-  PageConstants.ROUTES.CSS.TOPIC("task-10"),
-  PageConstants.ROUTES.CSS.TOPIC("task-11"),
+  PageConstants.ROUTES.JS.TOPIC("task-1"),
+  PageConstants.ROUTES.JS.TOPIC("task-2"),
+  PageConstants.ROUTES.JS.TOPIC("task-3"),
+  PageConstants.ROUTES.JS.TOPIC("task-4"),
+  PageConstants.ROUTES.JS.TOPIC("task-5"),
+  PageConstants.ROUTES.JS.TOPIC("task-6"),
+  PageConstants.ROUTES.JS.TOPIC("task-7"),
+  PageConstants.ROUTES.JS.TOPIC("task-8"),
+  PageConstants.ROUTES.JS.TOPIC("task-9"),
+  PageConstants.ROUTES.JS.TOPIC("task-10"),
+  PageConstants.ROUTES.JS.TOPIC("task-11"),
 ];
 
 interface PropsType {

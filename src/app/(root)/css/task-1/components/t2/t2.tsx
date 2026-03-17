@@ -1,10 +1,15 @@
-import { Typography } from "@/components/dashboard-ui/typography";
 import styles from "./t2.module.scss";
+import { TitleWithTabs } from "@/components/dashboard-ui/heading/TitleWithTabs";
+import { codeCSS, codeHTML } from "./t2.data";
 
 export default function T2() {
   return (
     <div className="flex flex-col gap-2">
-      <Typography variant="h2">Task 2</Typography>
+      <TitleWithTabs
+        title="Task 2"
+        codeHTML={codeHTML}
+        codeCSS={codeCSS}
+      >
       <div className={styles.wrapper}>
         <div className={styles.cards}>
           <div className={styles.card}>
@@ -18,6 +23,7 @@ export default function T2() {
           </div>
         </div>
       </div>
+      </TitleWithTabs>
     </div>
   );
 }

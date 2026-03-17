@@ -1,0 +1,96 @@
+export const codeHTML = `
+<div className={styles.wrapper}>
+<div className={styles.cards}>
+  <div className={styles.card}>
+    <span>01</span>
+  </div>
+  <div className={styles.card}>
+    <span>02</span>
+  </div>
+  <div className={styles.card}>
+    <span>03</span>
+  </div>
+</div>
+</div>
+`;
+
+export const codeCSS = `
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&h=800&fit=crop');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.45);
+    }
+}
+
+.cards {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.card {
+    width: 10rem;
+    height: 14rem;
+    border-radius: 0.75rem;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.3s, border-color 0.3s, transform 0.3s;
+
+    &:nth-child(1) {
+        background: rgba(120, 40, 80, 0.25);
+        border-color: rgba(180, 60, 100, 0.3);
+    }
+
+    &:nth-child(2) {
+        background: rgba(60, 20, 80, 0.25);
+        border-color: rgba(120, 40, 160, 0.3);
+    }
+
+    &:nth-child(3) {
+        background: rgba(20, 20, 60, 0.25);
+        border-color: rgba(60, 60, 160, 0.3);
+    }
+
+    &:hover {
+        transform: translateY(-0.5rem);
+
+        &:nth-child(1) {
+            background: rgba(120, 40, 80, 0.45);
+            border-color: rgba(180, 60, 100, 0.6);
+        }
+
+        &:nth-child(2) {
+            background: rgba(60, 20, 80, 0.45);
+            border-color: rgba(120, 40, 160, 0.6);
+        }
+
+        &:nth-child(3) {
+            background: rgba(20, 20, 60, 0.45);
+            border-color: rgba(60, 60, 160, 0.6);
+        }
+    }
+
+    span {
+        font-size: 3.5rem;
+        font-weight: 700;
+        color: rgba(255, 255, 255, 0.9);
+        letter-spacing: 0.05em;
+    }
+}`;

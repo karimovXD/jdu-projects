@@ -1,82 +1,25 @@
-import { Typography } from "@/components/dashboard-ui/typography";
 import styles from "./t1.module.scss";
-
-const movies = [
-  {
-    id: 1,
-    title: "THE DARK KNIGHT",
-    year: "2008",
-    genre: "ACTION · THRILLER",
-    bg: "https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=300&h=400&fit=crop",
-  },
-  {
-    id: 2,
-    title: "INCEPTION",
-    year: "2010",
-    genre: "SCI-FI · THRILLER",
-    bg: "https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=300&h=400&fit=crop",
-  },
-  {
-    id: 3,
-    title: "INTERSTELLAR",
-    year: "2014",
-    genre: "SCI-FI · DRAMA",
-    bg: "https://images.unsplash.com/photo-1446776877081-d282a0f896e2?w=300&h=400&fit=crop",
-  },
-  {
-    id: 4,
-    title: "PULP FICTION",
-    year: "1994",
-    genre: "CRIME · DRAMA",
-    bg: "https://images.unsplash.com/photo-1485846234645-a62644f84728?w=300&h=400&fit=crop",
-  },
-  {
-    id: 5,
-    title: "FIGHT CLUB",
-    year: "1999",
-    genre: "DRAMA · THRILLER",
-    bg: "https://images.unsplash.com/photo-1509347528160-9a9e33742cdb?w=300&h=400&fit=crop",
-  },
-  {
-    id: 6,
-    title: "THE MATRIX",
-    year: "1999",
-    genre: "SCI-FI · ACTION",
-    bg: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=300&h=400&fit=crop",
-  },
-  {
-    id: 7,
-    title: "FORREST GUMP",
-    year: "1994",
-    genre: "DRAMA · ROMANCE",
-    bg: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=300&h=400&fit=crop",
-  },
-  {
-    id: 8,
-    title: "GOODFELLAS",
-    year: "1990",
-    genre: "CRIME · BIOGRAPHY",
-    bg: "https://images.unsplash.com/photo-1470813740244-df37b8c1edcb?w=300&h=400&fit=crop",
-  },
-];
+import { TitleWithTabs } from "@/components/dashboard-ui/heading/TitleWithTabs";
+import { codeCSS, codeHTML, movies } from "./t1.data";
 
 export default function MovieGrid() {
   return (
     <div className="flex flex-col gap-2">
-      <Typography variant="h2">Task 1</Typography>
-      <div className={styles.grid}>
-        {movies.map((movie) => (
-          <div key={movie.id} className={styles.card}>
-            <img src={movie.bg} alt={movie.title} className={styles.image} />
-            <div className={styles.overlay} />
-            <div className={styles.content}>
-              <p className={styles.genre}>{movie.genre}</p>
-              <p className={styles.title}>{movie.title}</p>
-              <p className={styles.year}>{movie.year}</p>
+      <TitleWithTabs title="Task 1" codeHTML={codeHTML} codeCSS={codeCSS}>
+        <div className={styles.grid}>
+          {movies.map((movie) => (
+            <div key={movie.id} className={styles.card}>
+              <img src={movie.bg} alt={movie.title} className={styles.image} />
+              <div className={styles.overlay} />
+              <div className={styles.content}>
+                <p className={styles.genre}>{movie.genre}</p>
+                <p className={styles.title}>{movie.title}</p>
+                <p className={styles.year}>{movie.year}</p>
+              </div>
             </div>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
+      </TitleWithTabs>
     </div>
   );
 }

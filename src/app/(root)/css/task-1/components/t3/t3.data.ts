@@ -1,0 +1,71 @@
+export const codeHTML = `
+<nav className={styles.navbar}>
+<span className={styles.logo}>LogoBakery</span>
+<div className={styles.nav}>
+  <a href="#" className={styles.link}>
+    Services
+  </a>
+  <a href="#" className={styles.link}>
+    Projects
+  </a>
+  <a href="#" className={styles.link}>
+    About
+  </a>
+  <button className={styles.btn} type="button">
+    Contact
+  </button>
+</div>
+</nav>
+`;
+
+export const codeCSS = `
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    height: 4rem;
+    background: #111827;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.logo {
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.link {
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.65);
+    text-decoration: none;
+    transition: color 0.2s;
+
+    &:hover {
+        color: #fff;
+    }
+}
+
+.btn {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #fff;
+    background: #0ea5e9;
+    border: none;
+    border-radius: 0.375rem;
+    padding: 0.5rem 1.25rem;
+    cursor: pointer;
+    transition: background 0.2s;
+
+    &:hover {
+        background: #0284c7;
+    }
+}`;
