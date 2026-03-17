@@ -29,7 +29,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
       .map((section) => ({
         ...section,
         items: section.items.filter((item) =>
-          item.title.toLowerCase().includes(q)
+          item.title.toLowerCase().includes(q),
         ),
       }))
       .filter((section) => section.items.length > 0);

@@ -10,6 +10,7 @@ interface PropsType {
   codeHTML?: string;
   codeCSS?: string;
   codeJS?: string;
+  tabsDefaultValue?: "html" | "css" | "js";
 }
 
 export function TitleWithTabs({
@@ -18,9 +19,10 @@ export function TitleWithTabs({
   codeHTML,
   codeCSS,
   codeJS,
+  tabsDefaultValue = "html",
 }: PropsType) {
   const TabsInside = (
-    <Tabs defaultValue="html" className="w-full">
+    <Tabs defaultValue={tabsDefaultValue} className="w-full">
       <TabsList variant="line">
         {codeHTML && <TabsTrigger value="html">HTML</TabsTrigger>}
         {codeCSS && <TabsTrigger value="css">CSS</TabsTrigger>}
